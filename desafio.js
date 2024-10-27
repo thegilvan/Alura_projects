@@ -1,3 +1,6 @@
+//Teste de cópia
+
+
 /*alert(`Seu saldo na conta é: ${"1500,00"}` )
 let nome = prompt('Nome do usuário');
 alert('Boas vindas ao nosso site '+ nome);// tem situações em que a virgula não funciona. Este é um destes casos
