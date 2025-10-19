@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/styles.css" />
+    <title>CodeConnect</title>
+  </head>
+
+  <body>
+    <aside>
+      <img src="img/Logo.svg" alt="Logo CodeConnect" class="aside__img" />
+      <nav class="aside__nav">
+        <ul class="aside__list">
+          <li class="aside__item">
+            <a href="#" class="aside__link-first">Publicar</a>
+          </li>
+          <li class="aside__item">
+            <a href="#" class="aside__link">
+              <img src="img/feed.svg" alt="feed" class="link__img" />
+              <p class="aside__text">Feed</p>
+            </a>
+          </li>
+          <li class="aside__item">
+            <a href="#" class="aside__link">
+              <img src="img/account_circle.svg" alt="Perfil" class="link__img" />
+              <p class="aside__text">Perfil</p>
+            </a>
+          </li>
+          <li class="aside__item">
+            <a href="#" class="aside__link">
+              <img src="img/info.svg" alt="Info" class="link__img" />
+              <p class="aside__text">Sobre nós</p>
+            </a>
+          </li>
+          <li class="aside__item">
+            <a href="#" class="aside__link">
+              <img src="img/logout.svg" alt="logout" class="link__img" />
+              <p class="aside__text">Sair</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="upload">
+        <div class="upload__screen">
+          <img src="img/imagem1.png" alt="imagem padrão" class="upload__preview" />
+        </div>
+        <input type="file" id="upload-input" accept=".png, .jpeg, .jpg" />
+        <button class="upload__button" id="upload-button">Carregar imagem</button>
+        <ul class="upload__list">
+          <li class="upload__item">
+            <p class="upload__name">image_projeto.png</p>
+            <img class="upload__remove" src="img/close.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="project">
+        <h2 class="project__title">Novo projeto</h2>
+        <form>
+          <label for="input-project-name">Nome do Projeto</label>
+          <input type="text" id="input-project-name" />
+          <label for="input-project-description">Descrição</label
+          ><textarea id="input-project-description"></textarea
+          ><label for="input-project-tag">Tags</label>
+          <input type="text" id="input-project-tag" list="tag-possible" />
+          <datalist id="tag-possible">
+            <option value="Front-end"></option>
+          </datalist>
+        </form>
+        <ul class="project__tag-list">
+          <li class="tag">
+            <p class="tag__name">Front-end</p>
+            <img src="img/close-black.svg" alt="tag remove icon" class="tag__remove" />
+          </li>
+        </ul>
+        <span class="project__button-wrapper"
+          ><button id="project-discard">Descartar</button
+          ><button id="project-publish">Publicar</button></span
+        >
+      </div>
+    </main>
+    <script src="/script/index.js" type="module"></script>
+  </body>
+</html>
