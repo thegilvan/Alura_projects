@@ -2,9 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "api.js",
+  "main": "api2.js",
   "scripts": {
-    "start": "node api.js"
+    "start": "node api2.js"
   },
   "keywords": [],
   "author": "",
